@@ -43,14 +43,22 @@ public class RoboInstaller {
     }
 
     private static int[] resources = {
-        R.raw.android_support_v4_dex,
-        R.raw.android_support_v4_dex_desc,
-        R.raw.guice_3_0_no_aop_dex,
-        R.raw.guice_3_0_no_aop_dex_desc,
-        R.raw.roboguice_2_0_dex,
-        R.raw.roboguice_2_0_dex_desc,
-        R.raw.javax_inject_dex,
-        R.raw.javax_inject_dex_desc
+        R.raw.scala_actors,
+        R.raw.scala_actors_desc,
+        R.raw.scala_collection,
+        R.raw.scala_collection_desc,
+        R.raw.scala_immutable,
+        R.raw.scala_immutable_desc,
+        R.raw.scala_mutable,
+        R.raw.scala_mutable_desc,
+        R.raw.scala_parallel,
+        R.raw.scala_parallel_desc,
+        R.raw.scala_util,
+        R.raw.scala_util_desc,
+        R.raw.scala_library,
+        R.raw.scala_library_desc,
+        R.raw.scala_xml,
+        R.raw.scala_xml_desc
     };
 
     private void installFiles() throws IOException {
@@ -62,7 +70,7 @@ public class RoboInstaller {
             File path = fileForResource(resid);
 
             if (path.getName().endsWith("_desc.xml")) // descriptor
-                sudo("ln -sf %s /system/etc/permissions/%s", path.getAbsolutePath(), path.getName());
+                sudo("ln -s %s /system/etc/permissions/%s", path.getAbsolutePath(), path.getName());
         }
     }
 
@@ -98,7 +106,7 @@ public class RoboInstaller {
         is.close();
         fos.close();
 
-        sudo("chmod a+r "+targetFile.getAbsolutePath());
+        sudo("chmod 666 "+targetFile.getAbsolutePath());
     }
     private File fileForResource(int resid) {
         String namePart = lastPart(ctx.getResources().getResourceName(resid));

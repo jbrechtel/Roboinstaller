@@ -1,0 +1,4 @@
+<permissions>
+    <library name="scala_collection"
+            file="/data/data/com.nasatrainedmonkeys.roboinstaller/files/scala_collection.jar"/>
+</permissions>

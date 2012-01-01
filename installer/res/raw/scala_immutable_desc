@@ -1,0 +1,4 @@
+<permissions>
+    <library name="scala_immutable"
+            file="/data/data/com.nasatrainedmonkeys.roboinstaller/files/scala_immutable.jar"/>
+</permissions>

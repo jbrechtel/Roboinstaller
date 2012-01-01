@@ -1,0 +1,4 @@
+<permissions>
+    <library name="scala_parallel"
+            file="/data/data/com.nasatrainedmonkeys.roboinstaller/files/scala_parallel.jar"/>
+</permissions>
