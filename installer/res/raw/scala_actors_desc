@@ -1,4 +1,0 @@
-<permissions>
-    <library name="scala_actors"
-            file="/data/data/com.nasatrainedmonkeys.roboinstaller/files/scala_actors.jar"/>
-</permissions>

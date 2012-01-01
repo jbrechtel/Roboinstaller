@@ -43,22 +43,16 @@ public class RoboInstaller {
     }
 
     private static int[] resources = {
-        R.raw.scala_actors,
-        R.raw.scala_actors_desc,
-        R.raw.scala_collection,
-        R.raw.scala_collection_desc,
-        R.raw.scala_immutable,
-        R.raw.scala_immutable_desc,
-        R.raw.scala_mutable,
-        R.raw.scala_mutable_desc,
-        R.raw.scala_parallel,
-        R.raw.scala_parallel_desc,
-        R.raw.scala_util,
-        R.raw.scala_util_desc,
-        R.raw.scala_library,
-        R.raw.scala_library_desc,
-        R.raw.scala_xml,
-        R.raw.scala_xml_desc
+        R.raw.scala_actors_291,
+        R.raw.scala_actors_291_desc,
+        R.raw.scala_collection_291,
+        R.raw.scala_collection_291_desc,
+        R.raw.scala_immutable_291,
+        R.raw.scala_immutable_291_desc,
+        R.raw.scala_library_291,
+        R.raw.scala_library_291_desc,
+        R.raw.scala_mutable_291,
+        R.raw.scala_mutable_291_desc
     };
 
     private void installFiles() throws IOException {

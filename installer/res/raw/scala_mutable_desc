@@ -1,4 +1,0 @@
-<permissions>
-    <library name="scala_mutable"
-            file="/data/data/com.nasatrainedmonkeys.roboinstaller/files/scala_mutable.jar"/>
-</permissions>

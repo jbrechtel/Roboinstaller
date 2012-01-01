@@ -1,4 +1,0 @@
-<permissions>
-    <library name="scala_xml"
-            file="/data/data/com.nasatrainedmonkeys.roboinstaller/files/scala_xml.jar"/>
-</permissions>
